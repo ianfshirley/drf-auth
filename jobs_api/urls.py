@@ -25,6 +25,6 @@ urlpatterns = [
     # https://github.com/encode/django-rest-framework/blob/master/rest_framework/urls.py
     path("api-auth/", include("rest_framework.urls")),
 
-    path('api/token', jwt_views.TokenObtainPairViews.as_view(), name='token_obtain_pair'),
+    path('api/token', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]

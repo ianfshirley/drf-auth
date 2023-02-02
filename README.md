@@ -1,7 +1,10 @@
-# LAB - Class 32
-## Project: DRF Permissions & PostgreSQL
+# LAB - Class 33
+## Project: Django REST Framework: Authentication & Production Server
 ### Author: Ian F. Shirley
 
 ### Tests
-- How do you run tests?
-  `$ python manage.py test` while in the project's root directory in the terminal
+- There are no new unit tests. To test functionality of JWT requests (), go to Thunder Client:
+  - in the URL bar type: `http://0.0.0.0:8000/api/token`
+  - change from a GET to a POST request
+  - in the request body, enter: `{"username":"username","password":"password"}` ("username" & "password" as the keys, your username & password as the values)
+  - Click Send
